@@ -1,7 +1,7 @@
 package org.example;
 import java.util.*;
 
-public class ArrayPractice1 {
+public class ArrayPractice1Traversal {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int n;
