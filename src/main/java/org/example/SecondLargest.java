@@ -1,8 +1,8 @@
 package org.example;
 import java.util.Scanner;
 public class SecondLargest {
-    public int getSecondLargest(int[]arr , int n){
-        if(n<2){
+    public int getSecondLargest(int[]arr){
+        if(arr.length<2){
             return -1;
         }
         int max;
@@ -10,7 +10,7 @@ public class SecondLargest {
 
         max=arr[0];
 
-        for(int i=1;i<n;i++){
+        for(int i=1;i< arr.length;i++){
             if(arr[i]>max){
                 secondMax=max;
                 max=arr[i];
@@ -27,16 +27,16 @@ public class SecondLargest {
         System.out.println("Enter the value of n: ");
         n= sc.nextInt();
         int []arr = new int[n];
-        for(int i=0;i<n;i++){
+        for(int i=0;i< arr.length;i++){
             System.out.println("Enter the elements : " + (i+1));
             arr[i]= sc.nextInt();
         }
         System.out.println("Array is : ");
-        for(int i=0 ;i<n ;i++){
+        for(int i=0 ;i< arr.length ;i++){
             System.out.println(arr[i]);
         }
         SecondLargest obj = new SecondLargest();
-        int result = obj.getSecondLargest(arr, n);
+        int result = obj.getSecondLargest(arr);
 
         System.out.println("Result: "+ result);
     }
