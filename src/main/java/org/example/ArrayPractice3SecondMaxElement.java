@@ -28,7 +28,13 @@ public class ArrayPractice3SecondMaxElement {
             }
         }
         System.out.println("Max Array element is : "+ max);
-        System.out.println("Second Max Array element is : "+ secondMax);
+
+        if(secondMax == Integer.MIN_VALUE){
+            System.out.println("No second largest element found");
+        } else {
+            System.out.println("Second Max Array element is : " + secondMax);
+        }
+
     }
 
 }
