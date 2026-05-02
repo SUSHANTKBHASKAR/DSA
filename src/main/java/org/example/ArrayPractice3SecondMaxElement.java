@@ -7,8 +7,14 @@ public class ArrayPractice3SecondMaxElement {
         int n;
         int max;
         int secondMax = Integer.MIN_VALUE;
+
         System.out.println("Enter the size of the array: ");
         n= sc.nextInt();
+
+        if(n < 2){
+            System.out.println("No second largest element (array size < 2)");
+            return;
+        }
         int []arr = new int[n];
         System.out.println("Enter the Array Elements: ");
         for(int i = 0 ; i<n ;i++){
